@@ -7,8 +7,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Asegúrate de que la ruta al proyecto Django esté en el sys.path
 # Esto puede variar dependiendo de tu configuración
-sys.path.append("/home/jorgeg/Documentos/repos/cfdcm/adso/2903013/django/sena")
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "sena.settings")    # Reemplaza 'sena' con el nombre de tu proyecto
+sys.path.append("/home/manana/Documentos/david/DavidWeb")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "DavidWeb.settings")    # Reemplaza 'sena' con el nombre de tu proyecto
 
 import django
 django.setup()
@@ -26,10 +26,10 @@ print("...")
 
 subject = "Spa SENA - Backup desde Script de Cron"
 body = "Copia de Seguridad de la Base de Datos del Proyecto Spa SENA."
-to_emails = ['misena.jor@gmail.com']
+to_emails = ['davidvelasquez659@gmail.com']
 
 # Archivo comprimido como archivo adjunto, ejemplo... cambiar por sus rutas y archivo
-file_path = '/home/jorgeg/Documentos/repos/cfdcm/adso/2903013/django/sena/db.sqlite3.zip'
+file_path = '/home/manana/Documentos/david/DavidWeb/db.sqlite3.zip'
 attachments = []
 if os.path.exists(file_path):
     try:
