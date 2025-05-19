@@ -3,7 +3,7 @@ import os
 from django.conf import settings
 
 if not settings.configured:
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "sena.settings")  # Reemplaza 'sena' con el nombre de tu proyecto
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "DavidWeb.settings")  # Reemplaza 'sena' con el nombre de tu proyecto
     settings.configure()
 
 EMAIL_BACKEND = settings.EMAIL_BACKEND
